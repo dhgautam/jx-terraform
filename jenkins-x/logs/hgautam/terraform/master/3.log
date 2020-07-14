@@ -1,28 +1,72 @@
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-wsqfn[0m
-{"level":"info","ts":1594688007.409393,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594688007.4098978,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-2fxk8[0m
+{"level":"info","ts":1594770216.270121,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594770216.2706597,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-9sbpr[0m
-{"level":"info","ts":1594688008.5720477,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1594688008.573296,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-2xr87[0m
+{"level":"info","ts":1594770217.4219866,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594770217.424637,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-hgautam-terraform-master-8rlzw-vdfb4[0m
-{"level":"info","ts":1594688014.6313257,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
-{"level":"info","ts":1594688015.2176778,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/terraform.git @ master in path /workspace/source"}
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-terraform-master-releas-gls49-4t54k[0m
+{"level":"info","ts":1594770223.4285474,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594770224.0710409,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/terraform.git @ v0.0.5 in path /workspace/source"}
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-setup-builder-home[0m
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:bb5fb88105d7d37cfcabb0006ffac52545fe4beb
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
-SKIP merge-pull-refs: Nothing to merge
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
 
-Showing logs for build [32mmeta-hgautam-terraform-master-8rlzw-3[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
-error: no build pack for hcl exists at directory /builder/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-kubernetes/packs/hcl
-[31m
-Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-tf-version-check[0m
+Terraform v0.12.17
+
+Your version of Terraform is out of date! The latest version
+is 0.12.28. You can update by downloading from https://www.terraform.io/downloads.html
+
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-tf-init[0m
+
+[0m[1mInitializing the backend...[0m
+
+[0m[1mInitializing provider plugins...[0m
+- Checking for available provider plugins...
+- Downloading plugin for provider "null" (hashicorp/null) 2.1.2...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.null: version = "~> 2.1"
+
+[0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+[0m[32m
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.[0m
+
+Showing logs for build [32mhgautam-terraform-master-releas-gls49-3[0m stage [32mfrom-build-pack[0m and container [32mstep-build-tf-apply[0m
+[0m[1mnull_resource.test: Creating...[0m[0m
+[0m[1mnull_resource.test: Provisioning with 'local-exec'...[0m[0m
+[0m[0mnull_resource.test (local-exec): Executing: ["/bin/sh" "-c" "ls -l"]
+[0m[0mnull_resource.test (local-exec): total 20
+[0m[0mnull_resource.test (local-exec): -rwxr-xr-x 1 root root  15 Jul 14 23:43 jenkins-x.yml
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root  42 Jul 14 23:43 OWNERS
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root  71 Jul 14 23:43 OWNERS_ALIASES
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root  13 Jul 14 23:43 README.md
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root   0 Jul 14 23:43 terraform.tfstate
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root 136 Jul 14 23:43 test.tf
+[0m[1mnull_resource.test: Creation complete after 0s [id=374716340796437551][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.[0m
