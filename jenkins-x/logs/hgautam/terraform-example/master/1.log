@@ -1,0 +1,72 @@
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8hrv6[0m
+{"level":"info","ts":1594770719.2841828,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594770719.2851095,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-vgpnd[0m
+{"level":"info","ts":1594770720.2474656,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594770720.2502425,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-terraform-example-maste-vs5vd-fr2jp[0m
+{"level":"info","ts":1594770752.3477407,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594770753.1069376,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/terraform-example.git @ v0.0.6 in path /workspace/source"}
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-tf-version-check[0m
+Terraform v0.12.17
+
+Your version of Terraform is out of date! The latest version
+is 0.12.28. You can update by downloading from https://www.terraform.io/downloads.html
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-tf-init[0m
+
+[0m[1mInitializing the backend...[0m
+
+[0m[1mInitializing provider plugins...[0m
+- Checking for available provider plugins...
+- Downloading plugin for provider "null" (hashicorp/null) 2.1.2...
+
+The following providers do not have any version constraints in configuration,
+so the latest version was installed.
+
+To prevent automatic upgrades to new major versions that may contain breaking
+changes, it is recommended to add version = "..." constraints to the
+corresponding provider blocks in configuration, with the constraint strings
+suggested below.
+
+* provider.null: version = "~> 2.1"
+
+[0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+[0m[32m
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.[0m
+
+Showing logs for build [32mhgautam-terraform-example-maste-vs5vd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-tf-apply[0m
+[0m[1mnull_resource.test: Creating...[0m[0m
+[0m[1mnull_resource.test: Provisioning with 'local-exec'...[0m[0m
+[0m[0mnull_resource.test (local-exec): Executing: ["/bin/sh" "-c" "ls -l"]
+[0m[0mnull_resource.test (local-exec): total 20
+[0m[0mnull_resource.test (local-exec): -rwxr-xr-x 1 root root  15 Jul 14 23:52 jenkins-x.yml
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root  42 Jul 14 23:52 OWNERS
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root  71 Jul 14 23:52 OWNERS_ALIASES
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root  54 Jul 14 23:52 README.md
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root   0 Jul 14 23:52 terraform.tfstate
+[0m[0mnull_resource.test (local-exec): -rw-r--r-- 1 root root 136 Jul 14 23:52 test.tf
+[0m[1mnull_resource.test: Creation complete after 0s [id=1168668001610972965][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.[0m
