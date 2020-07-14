@@ -1,0 +1,26 @@
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-gjd67[0m
+{"level":"info","ts":1594688092.2651553,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594688092.2657506,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-x2bwr[0m
+{"level":"info","ts":1594688093.3125167,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1594688093.316497,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-hgautam-terraform-master-releas-d4dv8-7zpcg[0m
+{"level":"info","ts":1594688216.9867585,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1594688218.854233,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/*******/terraform.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1d38e70e5226aaffd3b7fa0402f7466a53802762
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mhgautam-terraform-master-releas-d4dv8-4[0m stage [32mfrom-build-pack[0m and container [32mstep-build-dummy-release[0m
+Release
